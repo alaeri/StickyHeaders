@@ -170,4 +170,9 @@ public class StickyLayoutManager extends LinearLayoutManager {
             positioner.setHeaderPositions(headerPositions);
         }
     }
+
+    @Override
+    public boolean supportsPredictiveItemAnimations() {
+        return false;
+    }
 }
